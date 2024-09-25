@@ -1,7 +1,8 @@
 //import { useState } from 'react'
 // import Main from '../Main/Main';
-import CamperCard from '../CamperCard/CamperCard';
-//import SearchBox from '../SearchBox/SearchBox';
+// import CamperCard from '../CamperCard/CamperCard';
+// import CamperList from '../CamperList/CamperList';
+import SearchBox from '../SearchBox/SearchBox';
 // import Features from '../Features/Features';
 // import ContactForm from '../ContactForm/ContactForm';
 
@@ -12,8 +13,9 @@ export default function App() {
     <>
       <div>
         {/* <Main /> */}
-        <CamperCard />
-        {/* <SearchBox /> */}
+        {/* <CamperCard /> */}
+        {/* <CamperList /> */}
+        <SearchBox />
         {/* <Features /> */}
         {/* <ContactForm /> */}
       </div>
