@@ -1,7 +1,9 @@
 //import { useState } from 'react'
-//import Main from '../Main/Main';
-//import CamperCard from '../CamperCard/CamperCard';
-import SearchBox from '../SearchBox/SearchBox';
+// import Main from '../Main/Main';
+import CamperCard from '../CamperCard/CamperCard';
+//import SearchBox from '../SearchBox/SearchBox';
+// import Features from '../Features/Features';
+// import ContactForm from '../ContactForm/ContactForm';
 
 import './App.css';
 
@@ -10,8 +12,10 @@ export default function App() {
     <>
       <div>
         {/* <Main /> */}
-        {/* <CamperCard /> */}
-        <SearchBox />
+        <CamperCard />
+        {/* <SearchBox /> */}
+        {/* <Features /> */}
+        {/* <ContactForm /> */}
       </div>
     </>
   );

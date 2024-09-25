@@ -1,0 +1,60 @@
+.container {
+  width: 1440px;
+  height: 696px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 260px;
+  padding-left: 64px;
+  padding-right: 805px;
+  padding-bottom: 260px;
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  /* cover або contain */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  color: #f7f7f7;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 0.67; /* 66.667% */
+  margin-bottom: 16px;
+}
+
+.text {
+  color: #f7f7f7;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  margin-bottom: 40px;
+}
+
+.button {
+  display: flex;
+  width: 173px;
+  height: 56px;
+  padding: 16px 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  border: none;
+  background: #e44848;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: -0.08px;
+}
+
+.button:hover,
+.button:focus {
+  background: #d84343;
+}
