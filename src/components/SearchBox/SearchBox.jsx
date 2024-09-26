@@ -9,65 +9,66 @@ import {
   BsGrid3X3Gap,
 } from 'react-icons/bs';
 import { HiOutlineTv } from 'react-icons/hi2';
+import css from './SearchBox.module.css';
 
 export default function SearchBox() {
   return (
-    <div>
-      <div>
-        <p>Location</p>
-        <div>
-          <BsMap />
-          <p>Kyiv, Ukraine</p>
+    <div className={css.container}>
+      <div className={css.box}>
+        <p className={css.text}>Location</p>
+        <div className={css.location}>
+          <BsMap className={css.locationIcon} />
+          <p className={css.locationText}>Kyiv, Ukraine</p>
         </div>
       </div>
-      <p>Filters</p>
-      <div>
-        <h4>Vehicle equipment</h4>
-        <div>
-          <ul>
-            <li>
-              <BsWind />
-              <p>AC</p>
+      <p className={css.textFilter}>Filters</p>
+      <div className={css.equipmentBox}>
+        <h3 className={css.title}>Vehicle equipment</h3>
+        <div className={css.equipment}>
+          <ul className={css.equipmentList}>
+            <li className={css.equipmentItem}>
+              <BsWind className={css.iconBox} />
+              <p className={css.textBox}>AC</p>
             </li>
-            <li>
-              <BsDiagram3 />
-              <p>Automatic</p>
+            <li className={css.equipmentItem}>
+              <BsDiagram3 className={css.iconBox} />
+              <p className={css.textBox}>Automatic</p>
             </li>
-            <li>
-              <BsCupHot />
-              <p>Kitchen</p>
+            <li className={css.equipmentItem}>
+              <BsCupHot className={css.iconBox} />
+              <p className={css.textBox}>Kitchen</p>
             </li>
-            <li>
-              <HiOutlineTv />
-              <p>TV</p>
+            <li className={css.equipmentItem}>
+              <HiOutlineTv className={css.iconBox} />
+              <p className={css.textBox}>TV</p>
             </li>
-            <li>
-              <BsDroplet />
-              <p>Bathroom</p>
+            <li className={css.equipmentItem}>
+              <BsDroplet className={css.iconBox} />
+              <p className={css.textBox}>Bathroom</p>
             </li>
           </ul>
         </div>
-        <div>
-          <h4>Vehicle type</h4>
-          <div>
-            <ul>
-              <li>
-                <BsGrid1X2 />
-                <p>Van</p>
-              </li>
-              <li>
-                <BsGrid />
-                <p>Fully Integrated</p>
-              </li>
-              <li>
-                <BsGrid3X3Gap />
-                <p>Alcove</p>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div className={css.typeBox}>
+        <h3 className={css.title}>Vehicle type</h3>
+        <div className={css.type}>
+          <ul className={css.typeList}>
+            <li className={css.typeItem}>
+              <BsGrid1X2 className={css.iconBox} />
+              <p className={css.textBox}>Van</p>
+            </li>
+            <li className={css.typeItem}>
+              <BsGrid className={css.iconBox} />
+              <p className={css.textBox}>Fully Integrated</p>
+            </li>
+            <li className={css.typeItem}>
+              <BsGrid3X3Gap className={css.iconBox} />
+              <p className={css.textBox}>Alcove</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <button aria-label="Submit" type="button">
+      <button aria-label="Submit" type="button" className={css.button}>
         Search
       </button>
     </div>
