@@ -2,9 +2,9 @@
 // import Main from '../Main/Main';
 // import CamperCard from '../CamperCard/CamperCard';
 // import CamperList from '../CamperList/CamperList';
-import SearchBox from '../SearchBox/SearchBox';
+// import SearchBox from '../SearchBox/SearchBox';
 // import Features from '../Features/Features';
-// import ContactForm from '../ContactForm/ContactForm';
+import ContactForm from '../ContactForm/ContactForm';
 
 import './App.css';
 
@@ -15,9 +15,9 @@ export default function App() {
         {/* <Main /> */}
         {/* <CamperCard /> */}
         {/* <CamperList /> */}
-        <SearchBox />
+        {/* <SearchBox /> */}
         {/* <Features /> */}
-        {/* <ContactForm /> */}
+        <ContactForm />
       </div>
     </>
   );
