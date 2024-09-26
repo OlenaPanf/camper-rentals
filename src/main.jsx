@@ -1,11 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "modern-normalize";
-import App from '../src/components/App/App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import 'modern-normalize';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import App from '../src/components/App/App';
+import './index.css';
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );

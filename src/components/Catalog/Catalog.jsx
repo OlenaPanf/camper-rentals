@@ -1,11 +1,11 @@
-// import CamperList from '../CamperList/CamperList';
-// import SearchBox from '../SearchBox/SearchBox';
+import CamperList from '../CamperList/CamperList';
+import SearchBox from '../SearchBox/SearchBox';
 
 export default function Catalog() {
   return (
     <div>
-      {/* <CamperList /> */}
-      {/* <SearchBox /> */}
+      <CamperList />
+      <SearchBox />
     </div>
   );
 }

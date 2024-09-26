@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import {
   BsDiagram3,
   BsWind,
@@ -6,30 +7,36 @@ import {
   BsUiRadios,
 } from 'react-icons/bs';
 
-export default function Features() {
+export default function Features({ id }) {
+  const camper = useSelector(state =>
+    state.campers.campers.find(camper => camper.id === id)
+  );
+
+  if (!camper) return <p>Loading...</p>;
+
   return (
     <div>
       <div>
         <ul>
           <li>
             <BsDiagram3 />
-            <p>Automatic</p>
+            <p>{camper.form}</p>
           </li>
           <li>
             <BsWind />
-            <p>AC</p>
+            <p>{camper.ac ? 'Yes' : 'No'}</p>
           </li>
           <li>
             <BsFuelPump />
-            <p>Petrol</p>
+            <p>{camper.fuel}</p>
           </li>
           <li>
             <BsCupHot />
-            <p>Kitchen</p>
+            <p>{camper.kitchen ? 'Yes' : 'No'}</p>
           </li>
           <li>
             <BsUiRadios />
-            <p>Radio</p>
+            <p>{camper.radio ? 'Yes' : 'No'}</p>
           </li>
         </ul>
       </div>
@@ -38,31 +45,31 @@ export default function Features() {
         <div>
           <div>
             <p>Form</p>
-            <p>Panel truck</p>
+            <p>{camper.form}</p>
           </div>
 
           <div>
             <p>Length</p>
-            <p>5.4 m</p>
+            <p>{camper.length} m</p>
           </div>
 
           <div>
             <p>Width</p>
-            <p>2.01 m</p>
+            <p>{camper.width} m</p>
           </div>
 
           <div>
             <p>Height</p>
-            <p>2.05 m</p>
+            <p>{camper.height} m</p>
           </div>
 
           <div>
             <p>Tank</p>
-            <p>132 I</p>
+            <p>{camper.tank} L</p>
           </div>
           <div>
             <p>Consumption</p>
-            <p>12.4l/100km</p>
+            <p>{camper.consumption} l/100km</p>
           </div>
         </div>
       </div>
