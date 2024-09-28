@@ -1,12 +1,5 @@
-import {
-  BsSuitHeart,
-  BsFillStarFill,
-  BsMap,
-  BsDiagram3,
-  BsFuelPump,
-  BsCupHot,
-  BsWind,
-} from 'react-icons/bs';
+import { BsSuitHeart, BsFillStarFill, BsMap } from 'react-icons/bs';
+import CamperOptions from '../CamperOptions/CamperOptions';
 import css from './CamperCard.module.css';
 
 export default function CamperCard({ camper }) {
@@ -19,9 +12,16 @@ export default function CamperCard({ camper }) {
     location,
     description,
     transmission,
-    fuel,
+    engine,
+    AC,
+    bathroom,
     kitchen,
-    ac,
+    TV,
+    radio,
+    refrigerator,
+    microwave,
+    gas,
+    water,
   } = camper; // Деструктуризація властивостей кемпера
 
   // Отримуємо thumb з першого елемента gallery
@@ -66,30 +66,41 @@ export default function CamperCard({ camper }) {
           </ul>
         </div>
         <p className={css.text}>{description}</p>
-        <div className={css.options}>
+        {/* <div className={css.options}>
           <ul className={css.listOptions}>
             <li className={css.itemOptions}>
               <BsDiagram3 className={css.iconOptions} />
-              {/* <p className={css.textOptions}>Automatic</p> */}
               <p className={css.textOptions}>{transmission}</p>
             </li>
             <li className={css.itemOptions}>
               <BsFuelPump className={css.iconOptions} />
-              {/* <p className={css.textOptions}>Petrol</p> */}
               <p className={css.textOptions}>{fuel}</p>
             </li>
             <li className={css.itemOptions}>
               <BsCupHot className={css.iconOptions} />
-              {/* <p className={css.textOptions}>Kitchen</p> */}
               <p className={css.textOptions}>{kitchen ? 'Yes' : 'No'}</p>
             </li>
             <li className={css.itemOptions}>
               <BsWind className={css.iconOptions} />
-              {/* <p className={css.textOptions}>AC</p> */}
               <p className={css.textOptions}>{ac ? 'Yes' : 'No'}</p>
             </li>
           </ul>
-        </div>
+        </div> */}
+        <CamperOptions
+          options={{
+            transmission,
+            engine,
+            AC,
+            kitchen,
+            bathroom,
+            TV,
+            radio,
+            refrigerator,
+            microwave,
+            gas,
+            water,
+          }}
+        />
         <button aria-label="Submit" type="button" className={css.button}>
           Show more
         </button>

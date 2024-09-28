@@ -11,6 +11,19 @@ export default function Features({ id }) {
   const camper = useSelector(state =>
     state.campers.campers.find(camper => camper.id === id)
   );
+  // const {
+  //   location,
+  //   ac,
+
+  //   kitchen,
+  //   tv,
+  //   bathroom,
+  //   form,
+  //   engine,
+  //   transmission,
+
+  //   fuel,
+  // } = camper; // Деструктуризація властивостей кемпера
 
   if (!camper) return <p>Loading...</p>;
 
