@@ -5,12 +5,12 @@ import { fetchCampers } from '../../redux/campers/campersSlice';
 
 // import Main from '../Main/Main';
 // import CamperCard from '../CamperCard/CamperCard';
-import CamperList from '../CamperList/CamperList';
+// import CamperList from '../CamperList/CamperList';
 // import Details from '../Details/Details';
 // import SearchBox from '../SearchBox/SearchBox';
 // import Features from '../Features/Features';
 // import ContactForm from '../ContactForm/ContactForm';
-// import Catalog from '../Catalog/Catalog';
+import Catalog from '../Catalog/Catalog';
 
 import './App.css';
 
@@ -34,8 +34,8 @@ export default function App() {
 
         {/* <Main /> */}
         {/* <CamperCard /> */}
-        {/* <Catalog /> */}
-        <CamperList />
+        <Catalog />
+        {/* <CamperList /> */}
         {/* <SearchBox /> */}
         {/* <Features /> */}
         {/* <ContactForm /> */}

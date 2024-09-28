@@ -16,6 +16,8 @@
   height: 320px;
   flex-shrink: 0;
   border-radius: 10px;
+  /* object-fit: cover;
+  object-position: center; */
   /* background: url(../../images/background.jpg) lightgray -57.393px -4.801px /
     195.679% 103.001% no-repeat; */
 }

@@ -4,11 +4,11 @@ import {
   BsDiagram3,
   BsCupHot,
   BsDroplet,
+  BsDisplay,
   BsGrid1X2,
   BsGrid,
   BsGrid3X3Gap,
 } from 'react-icons/bs';
-import { HiOutlineTv } from 'react-icons/hi2';
 import css from './SearchBox.module.css';
 
 export default function SearchBox() {
@@ -39,7 +39,7 @@ export default function SearchBox() {
               <p className={css.textBox}>Kitchen</p>
             </li>
             <li className={css.equipmentItem}>
-              <HiOutlineTv className={css.iconBox} />
+              <BsDisplay className={css.iconBox} />
               <p className={css.textBox}>TV</p>
             </li>
             <li className={css.equipmentItem}>
