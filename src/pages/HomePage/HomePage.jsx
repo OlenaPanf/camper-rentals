@@ -1,9 +1,9 @@
-// import Main from '../../components/Main/Main';
+import Main from '../../components/Main/Main';
 
-// export default function HomePage() {
-//   return (
-//     <div >
-//       <Main />
-//     </div>
-//   );
-// }
+export default function HomePage() {
+  return (
+    <div>
+      <Main />
+    </div>
+  );
+}

@@ -1,19 +1,25 @@
-// export default function Reviews() {
-//   if (!reviews.length) {
-//     return <div>We don’t have any reviews for this movie</div>;
-//   }
+import { useSelector } from 'react-redux';
 
-//   return (
-//     <div>
-//       {reviews.map((review, index) => (
-//         <div key={index} className={css.review}>
-//           <h3>● Author: {review.author}</h3>
-//           <p className={css.text}>{review.content}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
+export default function Reviews({ camperId }) {
+  const camper = useSelector(state =>
+    state.campers.campers.find(camper => camper.id === camperId)
+  );
+
+  if (!camper?.reviews?.length) {
+    return <div>We don`t have any reviews for this camper</div>;
+  }
+
+  return (
+    <div>
+      {camper.reviews.map((review, index) => (
+        <div key={index} className="review">
+          <h3>Author: {review.author}</h3>
+          <p>{review.content}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
 
 //=====================================================
 // import css from './MovieReviews.module.css'

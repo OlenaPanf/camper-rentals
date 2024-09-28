@@ -1,9 +1,9 @@
-// import Catalog from '../../components/Catalog/Catalog';
+import Catalog from '../../components/Catalog/Catalog';
 
-// export default function CatalogPage() {
-//   return (
-//     <div>
-//       <Catalog />
-//     </div>
-//   );
-// }
+export default function CatalogPage() {
+  return (
+    <div>
+      <Catalog />
+    </div>
+  );
+}
